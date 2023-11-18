@@ -1,0 +1,64 @@
+       <app-hero></app-hero>
+       <app-about></app-about>
+       <app-search></app-search>
+       <app-tags></app-tags>
+       <app-not-found [visible]="!foods || foods.length<=0" resetLinkText="Reset Search"></app-not-found>
+       <ul class="ul-list">
+            <li *ngFor="let food of foods">
+                <a routerLink="/food/{{food.id}}">
+                    <img src="{{food.imageUrl}}" alt="food images">
+                    <div class="content">
+                        <div class="name">
+                          {{  food.name}}
+                        </div>
+                        <span class="favourite {{food.favourite?'':'not'}}">♥</span>
+                        
+                    <div class="product-item-footer">
+                        <div class="origin">
+                            <span *ngFor="let origin of food.origins">
+                                {{origin}}
+                            </span>
+                        </div>
+                        <div class="cook-time">
+                            <span>⏰</span>
+                            {{food.cooktime}}
+                        </div>
+                    </div>
+                   
+                        
+                        
+                        
+                        
+                    <div class="price">
+                        {{food.price |currency}}
+                    </div>
+                </div>
+
+                </a>
+            </li>
+        </ul>
+
+        <!-- <div class="cart1">
+            <ul>
+                <li>
+                    <img src="assets/food1.jpg" class="food-img rounded" alt="">
+                    <div class="foodName">
+                        <h1 class="food-name">Food Name</h1>
+                        <span class="fav">♥</span>
+                    </div>
+                    <div class="origin">
+                        <span> fastfood 
+                        </span>
+                    </div>
+                    <div class="cook-time">
+                        <span>⏰</span>
+                       20-25 min
+                    </div>
+                    <div class="price">
+                      15$
+                    </div>
+                </li>
+                
+            </ul>
+        </div> -->
+<app-footer></app-footer>

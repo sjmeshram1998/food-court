@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@100;300&display=swap');
+
+  *{
+    box-sizing: border-box;
+
+  }
+  body {
+    font-family: 'quicksand', sans-serif;
+    margin: 0;
+  }
+  

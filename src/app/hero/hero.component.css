@@ -1,0 +1,17 @@
+.container-fluid {
+    background-image: url('/assets/bg2.jpg');
+    -webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92vh;
+    width: 100%;
+}
+.sub-heading {
+    padding-top: 16%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Young Serif', serif;
+}

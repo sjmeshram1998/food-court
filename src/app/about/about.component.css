@@ -1,0 +1,32 @@
+.about {
+    box-shadow: -12px -12px #f64747;
+}
+.about-info {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Young Serif', serif;
+    padding-top: 40px;
+}
+ .about-info span {
+    color: #e72929;
+ }
+ .about-para {
+    line-height: 30px;
+
+ }
+ .about-bg {
+    background-image: url('/assets/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 18rem;
+    position: relative;
+    top: 0px;
+    z-index: -1;
+    /* width: 100%;
+    height: 50%; */
+ }
+ .about-bg h1 {
+    color: white;
+    padding: 6rem;
+ }
